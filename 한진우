@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Showcase</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Additional styles if needed */
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <div class="container mx-auto p-4">
+        <header class="text-center my-8">
+            <h1 class="text-3xl font-bold">레시피 추천</h1>
+            <p class="text-sm mt-2">냉장고 재료로 레시피를 추천해드립니다.</p>
+        </header>
+
+        <nav class="flex justify-center space-x-4 mb-8">
+            <a href="#" class="text-lg font-semibold border-b-2 border-transparent hover:border-black">레시피</a>
+            <a href="#" class="text-lg font-semibold border-b-2 border-transparent hover:border-black">냉장고& 재료 장바구니</a>
+            <a href="#" class="text-lg font-semibold border-b-2 border-transparent hover:border-black">레시피 장바구니</a>
+        </nav>
+
+        <main>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="p-4 shadow-lg rounded-lg">
+                    <img src="https://source.unsplash.com/featured/?kimchi" alt="김치볶음" class="rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold mb-2">김치볶음</h2>
+                    <button class="like-button mt-2">좋아요</button>
+                    <p class="text-sm">재료: 김치, 양파, 돼지고기, 당근, 감자, 대파, 마늘</p>
+                    <button class="cart-button mt-2">카트</button>
+                </div>
+                <div class="p-4 shadow-lg rounded-lg">
+                    <img src="https://source.unsplash.com/featured/?spicy-food" alt="닭갈비" class="rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold mb-2">닭갈비</h2>
+                    <button class="like-button mt-2">좋아요</button>
+                    <p class="text-sm">재료: 닭가슴살, 고추장, 간장, 맛술, 간장, 설탕, 마늘</p>
+                    <button class="cart-button mt-2">카트</button>
+                </div>
+                <div class="p-4 shadow-lg rounded-lg">
+                    <img src="https://source.unsplash.com/featured/?pancake" alt="스크램블 에그" class="rounded-lg mb-4">
+                    <h2 class="text-lg font-semibold mb-2">스크램블 에그</h2>
+                    <button class="like-button mt-2">좋아요</button>
+                    <p class="text-sm">재료: 달걀, 우유, 소금, 후추, 버터</p>
+                    <button class="cart-button mt-2">카트</button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="text-center mt-12">
+            <p class="text-sm">* 냉장고에 보유한 재료에 기반하였습니다. 재료의 종류에 따라 정확도가 달라질 수 있습니다.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Any additional JavaScript can be added here
+        document.addEventListener("DOMContentLoaded", function() {
+        // 좋아요 버튼 클릭 이벤트 처리
+        document.querySelectorAll('.like-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                alert('좋아요 버튼이 클릭되었습니다.');
+                // 추가로 수행할 작업을 여기에 추가할 수 있습니다.
+            });
+        });
+
+
+           // 카트 버튼 클릭 이벤트 처리
+        document.querySelectorAll('.cart-button').forEach(function(button) {
+            button.addEventListener('click', function() {
+                alert('카트 버튼이 클릭되었습니다.');
+                // 추가로 수행할 작업을 여기에 추가할 수 있습니다.
+            });
+        });
+    });
+    </script>
+</body>
+</html>
